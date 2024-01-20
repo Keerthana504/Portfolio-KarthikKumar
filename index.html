@@ -45,10 +45,10 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="./assets/Karthik1.jpg" />
+              <img src="./assets/cloud.jpg" />
             </div>
             <div class="about-col-2">
-              <h1 class="sub-title">About Me</h1>
+              <h1 class="sub-title m-bottom">About Me</h1>
               <p class="para">
                 Having worked as a DevOps engineer for around five years in
                 various capacities, this techie has outstanding knowledge in
@@ -69,11 +69,18 @@
               </div>
               <div class="tab-contents active-tab" id="skills">
                 <ul>
-                  <li><span>DevSecOps</span><br /></li>
+                  <li><span>Automate CI/CD</span><br /></li>
                   <li>
                     <span>Google Cloud Platform (GCP) , AWS, Azure </span><br />
                   </li>
-                  <li><span></span><br /></li>
+                  <li><span>Containerization and Orchestration</span><br /></li>
+                  <li><span>Monitoring, Logging and Security</span><br /></li>
+                  <li>
+                    <span
+                      >Configuration Management and Infrastructure as Code
+                      (IaC)</span
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="tab-contents" id="experience">
@@ -94,10 +101,14 @@
               </div>
               <div class="tab-contents" id="education">
                 <ul>
-                  <li><span>2017 - 2019 PGDM</span><br /></li>
+                  <li>
+                    <span>2017 - 2019 PGDM</span><br />
+                    Computer Networks, St. Clair College
+                    <br />
+                  </li>
                   <li>
                     <span> 2011 - 2015 B.Tech </span><br />Computer Science &
-                    Engineering
+                    Engineering , Sri Sai Jyothi Engineering College
                   </li>
                 </ul>
               </div>
@@ -108,25 +119,44 @@
       <!------------ services  -------------------->
       <section id="services">
         <div class="container">
-          <h1 class="sub-title">My Services</h1>
+          <h1 class="sub-title">What I can do?</h1>
           <div class="services-list">
             <div>
               <i class="fa-solid fa-cloud"></i>
               <h2>Cloud Platform</h2>
-              <p class="para"></p>
-              <a href="">Learn more</a>
+
+              <p class="para" id="readMoreCloud">
+                Build reliable CI/ CD pipelines for automated software
+                development processes by utilising cloud services such as AWS
+                CodePipeline, Azure DevOps, or Google Cloud Build.
+              </p>
+              <a onclick="readMoreCloud()" id="cloud">Read more</a>
             </div>
             <div>
               <i class="fa-solid fa-robot"></i>
               <h2>Automation Deployments</h2>
-              <p class="para"></p>
-              <a href="">Learn more</a>
+
+              <p class="para" id="readMoreDeploy">
+                Deploying and managing containerized applications using services
+                like Azure Kubernetes Service (AKS) and Azure Container Registry
+                (ACR).
+                <br /><br />
+                Assist in designing and implementing fully automated CI/CD
+                pipelines using tools like Azure DevOps, enabling efficient and
+                rapid software delivery.
+              </p>
+              <a onclick="readMoreDeploy()" id="deploy">Read more</a>
             </div>
             <div>
               <i class="fa-solid fa-shield"></i>
               <h2>Security</h2>
-              <p class="para"></p>
-              <a href="">Learn more</a>
+
+              <p class="para" id="readMoreSecurity">
+                Security best practices in areas such as access control,
+                encryption, and secure coding, and experience in implementing
+                security measures throughout the development lifecycle.
+              </p>
+              <a onclick="readMoreSecurity()" id="security">Read more</a>
             </div>
           </div>
         </div>
@@ -134,13 +164,19 @@
       <!------------ portfolio  -------------------->
       <section id="portfolio">
         <div class="container">
-          <h1 class="sub-title">My Work</h1>
+          <h1 class="sub-title">What have I done?</h1>
           <div class="work-list">
             <div class="work">
               <img src="./assets/Devops.jpg" alt="" />
               <div class="layer">
                 <h3>Project 1</h3>
-                <p class="para">Project 1 description</p>
+                <p class="para">
+                  Led the design and implementation of automated CI/CD pipelines
+                  in Azure DevOps, reducing software delivery time by 30%.
+                  Proficient in deploying and managing containerized
+                  applications with Azure Kubernetes Service (AKS), utilizing
+                  Azure Container Registry (ACR) for Docker image management
+                </p>
                 <a href="" target="_blank"
                   ><i class="fa-solid fa-up-right-from-square"></i
                 ></a>
@@ -150,7 +186,14 @@
               <img src="./assets/operatingSystem.jpg" alt="" />
               <div class="layer">
                 <h3>Project 2</h3>
-                <p class="para">Project 2 description</p>
+                <p class="para">
+                  Administered Jenkins for Build, Test, and Deploy processes
+                  with SVN/GIT, automating weekly releases using ANT/Maven for
+                  Java code. Managed Red Hat Enterprise Linux and CentOS,
+                  configured AWS VPC networks, and led migration of services to
+                  AWS, covering design, network, data migration, automation, and
+                  documentation.
+                </p>
                 <a href="" target="_blank"
                   ><i class="fa-solid fa-up-right-from-square"></i
                 ></a>
@@ -160,7 +203,12 @@
               <img src="./assets/operations.jpg" alt="" />
               <div class="layer">
                 <h3>Project 3</h3>
-                <p class="para">Project 3 description</p>
+                <p class="para">
+                  Implemented automated Linux infrastructure on CentOS and AWS,
+                  migrating applications from Windows. Utilized AWS
+                  CloudFormation for VPC configuration and managed scalable
+                  infrastructure with Ansible and Puppet
+                </p>
                 <a href="" target="_blank">
                   <i class="fa-solid fa-up-right-from-square"></i
                 ></a>
@@ -168,25 +216,28 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <button class="btn" disabled>See more</button>
       </section>
       <section id="contact">
         <div class="container">
           <div class="row">
             <div class="contact-left">
-              <h1 class="sub-title">Contact Me</h1>
+              <h1 class="sub-title m-bottom">Contact Me</h1>
               <p>
                 <i class="fa-solid fa-paper-plane"></i>
                 karthikbandi.995@gmail.com
               </p>
-              <p><i class="fa-solid fa-phone"></i> 1234567876543</p>
+              <p><i class="fa-solid fa-phone"></i> 647-873-3008</p>
               <div class="social-icons">
                 <a href="https://www.linkedin.com/in/karthikbandi995/"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
                 <a href=""><i class="fa-brands fa-github"></i></a>
               </div>
-              <a href="./assets/resume.pdf" class="btn btn-2" download
+              <a
+                href="./assets/Karthik-Devops-Resume.pdf"
+                class="btn btn-2"
+                download
                 >Download CV</a
               >
             </div>
@@ -215,11 +266,17 @@
                 ></textarea>
                 <button type="submit" class="btn btn-2">Submit</button>
               </form>
-              <span id="msg"></span>
+              <div id="success-msg"></div>
             </div>
           </div>
         </div>
       </section>
+      <p class="credits">
+        Images from
+        <a href="https://www.freepik.com/popular-photos" target="_blank"
+          >Freepik</a
+        >
+      </p>
     </main>
     <footer>
       <div class="copyright"><p>Copyright @ Karthik Kumar</p></div>
